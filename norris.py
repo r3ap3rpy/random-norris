@@ -4,8 +4,6 @@ import websockets
 import random
 import requests
 
-logging.basicConfig()
-
 STATE = {'value':json.loads(requests.get(url="http://api.icndb.com/jokes/random/").text)['value']['joke']}
 
 USERS = set()
